@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - CSELOL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-nav-container">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/LOGO-VERDE.png" alt="Logo do Campeonato" class="logo-img">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="calendário.html">Calendário</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/EgSmGtivIrGAjHZH0P366X" target="_blank" class="social-icon"><i class="fa-solid fa-user-group"></i></a>
+                    </div>
+                    <a href="https://forms.gle/5AGDJsW3kNEJytQC9" class="inscricoes-button">Inscrições</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="results-container">
+            <div class="container">
+                <h2>Resultados</h2>
+                <div class="results-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Equipe A</th>
+                                <th>Resultado</th>
+                                <th>Equipe B</th>
+                                <th>Ver Estatísticas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Exemplo de resultados -->
+                            <tr>
+                                <td>01/08/2024</td>
+                                <td>Equipe Alpha</td>
+                                <td>2 - 1</td>
+                                <td>Equipe Beta</td>
+                                <td><button class="stats-button" data-url="#">Ver Estatísticas</button></td>
+                            </tr>
+                            <tr>
+                                <td>02/08/2024</td>
+                                <td>Equipe Gamma</td>
+                                <td>0 - 3</td>
+                                <td>Equipe Delta</td>
+                                <td><button class="stats-button" data-url="#">Ver Estatísticas</button><button class="stats-button" data-url="#">VOD</button></td>
+                            </tr>
+                            
+                            <!-- Adicione mais resultados conforme necessário -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section about">
+                <h3>Sobre o CSELOL</h3>
+                <p>O CSELOL é o principal campeonato de League of Legends de Sergipe, promovendo a comunidade local e revelando novos talentos no cenário competitivo.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="calendário.html">Calendário</a></li>
+                    <li><a href="resultados.html">Resultados</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p>Email: contato@cselol.com</p>
+                <p>Telefone: (79) 99999-9999</p>
+                <p>Endereço: Rua Exemplo, 123, Aracaju-SE</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/copasergipanalol/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CSELOL. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <div id="statsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="statsFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
